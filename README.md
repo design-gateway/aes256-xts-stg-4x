@@ -1,14 +1,24 @@
 # AES256-XTS-STG-4x free evaluation demo
 
-This repository contains source code and brief description of AES256-XTS-STG-4x demo of Design Gateway's product. 
+This repository contains source code and a brief description of the AES256-XTS-STG-4x demo from Design Gateway's product.
 
 ## Basic information
 
-1. The IP and project are not provided in this repository. Please contact [Design Gateway](https://dgway.com) to obtain this free evaluation project.
-2. This project is distributed freely in an attempt to demonstrate how to use this IP.
-3. Design Gateway Co., Ltd. makes no claims, promises, or gurantees in using this free project. 
+1. The IP and project are not provided in this repository. Please contact [Design Gateway](https://dgway.com/index_E.html) to obtain this free evaluation project.
+2. The source code of this project is publicly available to demonstrate how to use this IP.
+3. Design Gateway Co., Ltd. makes no claims, promises, or guarantees regarding the use of this free project. 
+4. This evauluation demo includes a timeout limit.
 
 ## Project description
+The AES256-XTS-STG IP Core supports 256-bit AES encryption and decryption with XEX (XOR Encrypt XOR) tweakable block cipher, targetting storage applications that prioritize data confidentiality. More details about this IP can be found through this [link](https://dgway.com/ASIP_E.html#AESXTS).
+
+In addition to this free evaluation demo, we also offer another demo application where this IP is applied in an actual environment with a storage system. If you are interested in testing the full system, please contact us. This free demo, however, includes a simple system that demonstrates how our encryption IP core functions. The illustration below shows the overall system of this free demo, with more details described further below.
+
+![block-diagram](./docs/AES256XTSSTG4XDemo.png)
+
+Two AES256-XTS-STG-4x IP cores are used in this system — one serving as an encrypter and the other as a decrypter. The encrypter is fed input data by the pattern generator, and the output of the encrypter is then forwarded to the decrypter. Ideally, the input data before encryption and the output data after decryption should be the same. This concept is verified using a comparator to check the two data feeds — the regenerated input data and the output data from the decrypter. The result drives the state of LED pin 0, which remains off if the two data sets do not match. LED pin number 1, on the other hand, indicates the current busy status of the two IP cores in this system when it lights up.
+
+The project directory is briefly explained below.
 ```
 ├───docs - documents and their associated objects 
 └───source 
