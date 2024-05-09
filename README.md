@@ -16,7 +16,7 @@ In addition to this free evaluation demo, we also offer another demo application
 
 ![block-diagram](./docs/AES256XTSSTG4XDemo.png)
 
-Two AES256-XTS-STG-4x IP cores are used in this system — one serving as an encrypter and the other as a decrypter. The encrypter is fed input data by the pattern generator, and the output of the encrypter is then forwarded to the decrypter. Ideally, the input data before encryption and the output data after decryption should be the same. This concept is verified using a comparator to check the two data feeds — the regenerated input data and the output data from the decrypter. The result drives the state of LED pin 0, which remains off if the two data sets do not match. LED pin number 1, on the other hand, indicates the current busy status of the two IP cores in this system when it lights up.
+Two AES256-XTS-STG-4x IP cores are used in this system — one serving as an encrypter and the other as a decrypter. The encrypter is fed input data by the pattern generator, and the output of the encrypter is then forwarded to the decrypter. Ideally, the input data before encryption and the output data after decryption should be the same. This concept is verified using a comparator to check the two data feeds — the regenerated input data and the output data from the decrypter. If the two data sets do not match, the LED(0) is asserted to be '1'. On the other hand, LED(1) is asserrted to indicate the current busy status of the two IP cores in this system.
 
 The project directory is briefly explained below.
 ```
