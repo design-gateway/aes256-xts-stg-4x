@@ -166,7 +166,7 @@ Begin
     c_AES256XTSSTG4XEnc: AES256XTSSTG4XENC 
     Port map 
     ( 
-        RstB            =>	RstB              ,
+        RstB            =>  RstB              ,
         Clk             =>  Clk               ,
         version         =>  open              ,
         
