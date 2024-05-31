@@ -52,11 +52,11 @@ Architecture rtl Of AES256XTSSTG4XTop Is
 ----------------------------------------------------------------------------------
 -- Signal declaration
 ----------------------------------------------------------------------------------
-    signal    ExtRstB: std_logic;
-    signal     UserClk    : std_logic;
-    signal     sysRstB    : std_logic;
+    signal     ExtRstB     : std_logic;
+    signal     UserClk     : std_logic;
+    signal     sysRstB     : std_logic;
     
-    signal     rCounter : std_logic_vector( 31 downto 0 ) := x"00000000";
+    signal     rCounter    : std_logic_vector( 31 downto 0 ) := x"00000000";
 
 Begin
 ----------------------------------------------------------------------------------
