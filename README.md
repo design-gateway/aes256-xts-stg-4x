@@ -4,7 +4,7 @@ This repository contains source code and a brief description of the AES256-XTS-S
 
 ## Basic information
 
-1. The IP and project are not provided in this repository. Please contact [Design Gateway](https://dgway.com/index_E.html) to obtain this free evaluation project.
+1. The IP and project are not provided in this repository. Please contact [Design Gateway](https://dgway.com/contact.html) to obtain this free evaluation project.
 2. The source code of this project is publicly available to demonstrate how to use this IP.
 3. Design Gateway Co., Ltd. makes no claims, promises, or guarantees regarding the use of this free project. 
 4. This evauluation demo includes a timeout limit.
